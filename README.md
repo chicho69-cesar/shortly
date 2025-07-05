@@ -1,69 +1,88 @@
-# React + TypeScript + Vite
+# Shortly 🔗
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div style="width: 100%; display: flex; justify-content: center; margin-block: 1rem;">
+  <img src="./public/favicon.png" width="100" height="100" />
+</div>
 
-Currently, two official plugins are available:
+**Shortly** es una aplicación web basada en un URL shortener, a través de esta aplicación puedes crear links personalizados a sitios web a los que accedes con frecuencia de una forma más rápida y personalizada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Visítalo aquí:** [Shortly](https://shortly-cesar.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📸 Capturas de pantalla
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🖥️ Página principal
+![Home Page](public/images/full-image.webp)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Características
+
+- ✅ Crear enlaces personalizados.
+- ✅ Acceso rápido a tus sitios favoritos.
+- ✅ Interfaz intuitiva y fácil de usar.
+- ✅ Responsive: funciona en dispositivos móviles y de escritorio.
+- ✅ Autenticación de usuarios para guardar tus enlaces.
+- ✅ Integración con bases de datos para persistencia de datos.
+- ✅ Uso de supabase para autenticación, base de datos y almacenamiento de archivos.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+| Tecnología | Descripción |
+|------------|-------------|
+| [React](https://react.dev/) | Framework ui para aplicaciones web interactivas. |
+| [Vercel](https://www.vercel.com/) | Hosting y despliegue continuo. |
+| [Tailwind CSS](https://tailwindcss.com/) | Para estilos rápidos y personalizables. |
+| [Supabase](https://supabase.com/) | Base de datos y autenticación. |
+| [Shadcn/ui](https://ui.shadcn.com/) | Componentes de interfaz de usuario. |
+| [TypeScript](https://www.typescriptlang.org/) | Tipado estático para mayor seguridad. |
+
+---
+
+## 📦 Instalación local
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/chicho69-cesar/shortly.git
+cd shortly
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+La aplicación estará disponible en <http://localhost:5173>.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📂 Estructura del proyecto
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```txt
+cesar-portfolio/
+│
+├── public/             # Archivos públicos como imágenes
+├── src/
+│   ├── components/     # Componentes reutilizables
+│   ├── constants/      # Constantes y configuraciones
+│   ├── context/        # Contextos de React para el manejo de estado
+│   ├── db/             # Conexión a la base de datos y consultas
+│   ├── hooks/          # Hooks personalizados
+│   ├── layouts/        # Diseños y estructuras de página
+│   ├── lib/            # Librerías y utilidades
+│   ├── pages/          # Páginas de la aplicación
+│   ├── schema/         # Esquemas de validación y tipos
+│   ├── types/          # Tipado estático mediante typescript
+└── package.json        # Dependencias y scripts
 ```
+
+## 🤝 Contribuciones
+
+¿Quieres contribuir con ideas o mejoras? ¡Bienvenido! Puedes:
+
+- Hacer un fork del proyecto.
+- Crear una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+- Hacer tus cambios.
+- Crear un pull request.

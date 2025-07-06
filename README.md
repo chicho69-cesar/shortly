@@ -13,7 +13,7 @@
 ## 📸 Capturas de pantalla
 
 ### 🖥️ Página principal
-![Home Page](public/images/full-image.webp)
+![Home Page](public/full-image.png)
 
 ---
 
